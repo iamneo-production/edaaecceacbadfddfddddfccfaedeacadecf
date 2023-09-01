@@ -11,7 +11,7 @@ public class Apptest {
       WebDriver driver;
       String fbUrl = "https://www.fb.com";
       String facebookUrl = "https://www.facebook.com";
-      @BeforeClass
+    @BeforeClass
     public void invokeBrowser() {
         System.setProperty("webdriver.chrome.driver",
             "C:/Users/Ritika/workspace/libs/chromedriver_76/Chromedriver.exe");  
@@ -38,10 +38,10 @@ public class Apptest {
         driver.findElement(By.xpath("//input[@type='radio' and @value='2']")).click();
         driver.findElement(By.xpath("//button[text()='Sign Up']")).click();
     }
-@AfterClass
-public void closeBrowser() {
+    @AfterClass
+    public void closeBrowser() {
         driver.quit();
+    }
 }
-}
-}
+
 
